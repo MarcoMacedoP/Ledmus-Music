@@ -19,24 +19,7 @@
         height: inherit;
         display: flex;
         justify-content: flex-start;
-        .header__icon{
-            height: 100%;
-            box-sizing: border-box;
-            width: 2.22rem;
-            padding: 0.5rem 0;
-            background-image: url(img/isotipo.svg);
-            background-image: url(img/isotipo.png);
-            i{
-            display: block;
-            height: 100%;
-            width: 100%;
-            background-image: url(img/isotipo.svg);
-            background-image: url(img/isotipo.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-        }
-        }
+        
         ul{
             background-color: $white;
             display: flex;
@@ -63,4 +46,9 @@
         }
     }
     
+}
+@media only screen and(max-width: 500px){
+    .header{
+        padding: 0.5rem 1rem;
+    }
 }
