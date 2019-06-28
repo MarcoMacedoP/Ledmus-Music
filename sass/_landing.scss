@@ -1,24 +1,37 @@
-
-
-
+//$size:  59.0625vw;
 .landing-page{
-    --size: 756px;
+    
     .landing-sections{
+        display: grid;
         width: 100%;
-        height: 100vh;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        padding: 0 2rem;
+        min-height: 100vh;
+        grid-template-columns: 50% 1fr;
         position: relative;
+        
+        .landing__section-a{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            position: relative;
+        }
+        .landing__section-b{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 0 2rem;
+        }
         p, sub{
-
-            width: calc(100vw - var(--size));
+            box-sizing: border-box;
+            padding-right: .5rem;
+            width: 90%;
+            //Estilos temporales
+            border: 1px solid red;
         }
         .landing-img{
-            width: var(--size);
+            width: 100%;
             background-repeat: no-repeat;
-            background-size:  cover;
+            background-size:  contain;
             background-position: right;
             position: absolute;
             top: 0;
@@ -31,7 +44,7 @@
             margin-top: 1rem;
         }
         form{
-            width: 40%;
+            width: 100%;
             .secondary-button{
                 margin-top: 2rem;
             
@@ -39,12 +52,11 @@
         }
     }
     .one{
-        padding-top: 15%;
+        .landing__section-b{
+            padding-top: 50%;
+        }
         .landing-img{
             background-image: url("img/inicio.png");
-        }
-        p{
-            margin: 1rem 0;
         }
     }
     .two{
@@ -53,6 +65,9 @@
         }
         .button{
             margin-top: 1rem;
+        }
+        p{
+            width: 56vw;
         }
     }
     .three{
@@ -78,6 +93,148 @@
     .seven{
         .landing-img{
             background-image: url("img/contactanos.png");
+        }
+    }
+}
+
+/*Tablet media querys */
+@media only screen and (min-width:500px) and (min-height:1000px ){
+    
+    .landing-sections{
+        grid-template-columns: 1fr 44.01vw;
+    }
+
+  .landing-page{
+    .one{
+        .landing-img{
+            background-image: url("img/tablet/inicio.png");
+        }
+    }
+    .two{
+        .landing-img{
+            background-image: url("img/tablet/nosotros.png")
+        }
+        .button{
+            margin-top: 1rem;
+        }
+    }
+    .three{
+        .landing-img{
+            background-image: url("img/tablet/paquete_reunion.png");
+        }
+    }
+    .four{
+        .landing-img{
+            background-image: url("img/tablet/paquete_basico.png");
+        }
+    }
+    .five{
+        .landing-img{
+            background-image: url("img/tablet/paquete_inter.png");
+        }
+    }
+    .six{
+        .landing-img{
+            background-image: url("img/tablet/paquete_avanzado.png");
+        }
+    }
+    .seven{
+        .landing-img{
+            background-image: url("img/tablet/contactanos.png");
+        }
+    }
+  }
+}
+@media only screen and(max-width: 500px){
+ 
+    //$size:  59.0625vw;
+.landing-page{
+    .one{
+        .landing-img{
+            background-image: url("img/cellphone/inicio.png");            
+        }
+    }
+    .two{
+        .landing-img{
+            background-image: url("img/cellphone/nosotros.png")
+        }
+        .button{
+            margin-top: 1rem;
+        }
+        p{
+            width: 100%;
+        }
+    }
+    .three{
+        .landing-img{
+            background-image: url("img/cellphone/paquete_reunion.png");
+        }
+    }
+    .four{
+        .landing-img{
+            background-image: url("img/cellphone/paquete_basico.png");
+        }
+    }
+    .five{
+        .landing-img{
+            background-image: url("img/cellphone/paquete_inter.png");
+        }
+    }
+    .six{
+        .landing-img{
+            background-image: url("img/cellphone/paquete_avanzado.png");
+        }
+    }
+    .seven{
+        .landing-img{
+            background-image: url("img/cellphone/contactanos.png");
+        }
+    }
+    .landing__section-a{
+        margin-top: 1rem;
+        width: 100%;
+        height:  86.94vw;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+   
+    
+    .landing-sections{
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content;
+        p{
+            width: 100%;
+        }
+        .landing__section-a{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            .landing-img{
+                position: static;
+                width: calc(100% - 1rem);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        .landing__section-b{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }   
+    }
+    .one{
+        .landing__section-a{
+            position: static;
+            .landing-img{
+                width: 100%;
+                background-image: url("img/cellphone/inicio.png");
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                }
+            }
         }
     }
 }
