@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-direction: column;
+    input, textarea{
+        border-radius: 0.91rem;
+        border: solid 1px $main;
+        color: $main;
+        padding: 0.5rem 1rem;
+        font-family: $cuerpo;
+        background: $white;
+        margin: 0.5rem 0;
+    }
+
+}
+::placeholder{
+    color: $main;
+    font-family: $cuerpo;
+}
