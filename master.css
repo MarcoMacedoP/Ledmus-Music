@@ -151,6 +151,18 @@ sub {
   font-family: "Cabin", sans-serif;
   color: #C7C7C7; }
 
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.25rem;
+    color: #C7EAE4; }
+
+  h2 {
+    font-size: 2.25rem;
+    margin: 0.5rem 0; }
+
+  h4 {
+    font-size: 1.6875rem;
+    margin: 0.5rem 0; } }
 /*Logo de la barra de navegaci├│n*/
 .header .logo-container {
   height: 100%;
@@ -217,6 +229,18 @@ sub {
 @media only screen and (min-width: 500px) and (min-height: 1000px) {
   .header-logo .logo-container {
     width: 16.76vw; } }
+@media only screen and (max-width: 500px) {
+  .header .logo-container {
+    display: none; }
+
+  .header-logo h1 {
+    font-size: 2.25rem;
+    color: #C7EAE4; }
+  .header-logo h2 {
+    font-size: 1.1875rem;
+    color: #95C0DC; }
+  .header-logo .logo-container {
+    width: 20.32vw; } }
 .header {
   width: 100%;
   height: 7.5vh;
@@ -279,8 +303,7 @@ sub {
   .landing-page .landing-sections p, .landing-page .landing-sections sub {
     box-sizing: border-box;
     padding-right: .5rem;
-    width: 90%;
-    border: 1px solid red; }
+    width: 90%; }
   .landing-page .landing-sections .landing-img {
     width: 100%;
     background-repeat: no-repeat;
@@ -298,15 +321,13 @@ sub {
     .landing-page .landing-sections form .secondary-button {
       margin-top: 2rem; }
 .landing-page .one .landing__section-b {
-  padding-top: 50%; }
+  padding-top: 30%; }
 .landing-page .one .landing-img {
   background-image: url("img/inicio.png"); }
 .landing-page .two .landing-img {
   background-image: url("img/nosotros.png"); }
 .landing-page .two .button {
   margin-top: 1rem; }
-.landing-page .two p {
-  width: 56vw; }
 .landing-page .three .landing-img {
   background-image: url("img/paquete_reunion.png"); }
 .landing-page .four .landing-img {
@@ -318,8 +339,48 @@ sub {
 .landing-page .seven .landing-img {
   background-image: url("img/contactanos.png"); }
 
+/*-----------------Small PC media querys-------*/
+@media only screen and (max-width: 1000px) {
+  .landing-page .one h1 {
+    font-size: 3rem; }
+  .landing-page .one .landing-img {
+    background-image: url("img/small_pc/inicio.png"); }
+  .landing-page .two .landing-img {
+    background-image: url("img/small_pc/nosotros.png"); }
+  .landing-page .two .button {
+    margin-top: 1rem; }
+  .landing-page .three .landing-img {
+    background-image: url("img/small_pc/paquete_reunion.png"); }
+  .landing-page .four .landing-img {
+    background-image: url("img/small_pc/paquete_basico.png"); }
+  .landing-page .five .landing-img {
+    background-image: url("img/small_pc/paquete_inter.png"); }
+  .landing-page .six .landing-img {
+    background-image: url("img/small_pc/paquete_avanzado.png"); }
+  .landing-page .seven .landing-img {
+    background-image: url("img/small_pc/contactanos.png"); } }
+/*-----------------Tiny PC media querys-------*/
+@media only screen and (max-width: 850px) {
+  .landing-page .one h1 {
+    font-size: 2rem; }
+  .landing-page .one .landing-img {
+    background-image: url("img/tiny_pc/inicio.png"); }
+  .landing-page .two .landing-img {
+    background-image: url("img/tiny_pc/nosotros.png"); }
+  .landing-page .two .button {
+    margin-top: 1rem; }
+  .landing-page .three .landing-img {
+    background-image: url("img/tiny_pc/paquete_reunion.png"); }
+  .landing-page .four .landing-img {
+    background-image: url("img/tiny_pc/paquete_basico.png"); }
+  .landing-page .five .landing-img {
+    background-image: url("img/tiny_pc/paquete_inter.png"); }
+  .landing-page .six .landing-img {
+    background-image: url("img/tiny_pc/paquete_avanzado.png"); }
+  .landing-page .seven .landing-img {
+    background-image: url("img/tiny_pc/contactanos.png"); } }
 /*Tablet media querys */
-@media only screen and (min-width: 500px) and (min-height: 1000px) {
+@media only screen and (min-width: 500px) and (min-height: 900px) {
   .landing-sections {
     grid-template-columns: 1fr 44.01vw; }
 
@@ -339,9 +400,19 @@ sub {
     background-image: url("img/tablet/paquete_avanzado.png"); }
   .landing-page .seven .landing-img {
     background-image: url("img/tablet/contactanos.png"); } }
-@media only screen and (max-width: 500px) {
-  .landing-page .one .landing-img {
-    background-image: url("img/cellphone/inicio.png"); }
+@media only screen and (max-width: 700px) {
+  .landing-page .one {
+    position: relative; }
+    .landing-page .one .landing-img {
+      background-image: url("img/cellphone/inicio.png"); }
+    .landing-page .one .button-container {
+      position: absolute;
+      bottom: 5%; }
+    .landing-page .one .landing__section-b {
+      padding: 50% 1.5rem 0 1.5rem; }
+    .landing-page .one sub {
+      width: 100%;
+      text-align: center; }
   .landing-page .two .landing-img {
     background-image: url("img/cellphone/nosotros.png"); }
   .landing-page .two .button {
@@ -370,7 +441,8 @@ sub {
     grid-template-columns: 100%;
     grid-template-rows: min-content min-content; }
     .landing-page .landing-sections p {
-      width: 100%; }
+      width: 100%;
+      padding: 0; }
     .landing-page .landing-sections .landing__section-a {
       grid-column: 1/2;
       grid-row: 2/3; }
@@ -437,5 +509,15 @@ footer {
     bottom: 3%; }
     footer span a {
       color: #6D6D6D; }
+
+@media only screen and (max-width: 500px) {
+  footer {
+    padding-bottom: 4rem; }
+
+  p {
+    padding: 0 2rem; }
+
+  span {
+    font-size: 0.75rem; } }
 
 /*# sourceMappingURL=master.css.map */

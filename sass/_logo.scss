@@ -78,10 +78,31 @@
     }
 }
 /*logo media querys*/
-@media only screen and (min-width:500px) and (min-height:1000px ){
+@media only screen and (min-width:500px) and (min-height:1000px ){ 
+    //tablet media
     .header-logo{
         .logo-container{
             width: 16.76vw;
+        }
+    }
+}
+@media only screen and(max-width: 500px){
+    .header{
+        .logo-container{
+            display: none;
+        }
+    }
+    .header-logo{
+        h1{
+            font-size: 2.25rem;
+            color: $main_ligth;
+        }
+        h2{
+            font-size: 1.1875rem;
+            color: $main;
+        }
+        .logo-container{
+            width: 20.32vw;
         }
     }
 }
