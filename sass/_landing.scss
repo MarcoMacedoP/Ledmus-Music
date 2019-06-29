@@ -25,8 +25,6 @@
             box-sizing: border-box;
             padding-right: .5rem;
             width: 90%;
-            //Estilos temporales
-            border: 1px solid red;
         }
         .landing-img{
             width: 100%;
@@ -53,7 +51,7 @@
     }
     .one{
         .landing__section-b{
-            padding-top: 50%;
+            padding-top: 30%;
         }
         .landing-img{
             background-image: url("img/inicio.png");
@@ -65,9 +63,6 @@
         }
         .button{
             margin-top: 1rem;
-        }
-        p{
-            width: 56vw;
         }
     }
     .three{
@@ -96,10 +91,102 @@
         }
     }
 }
+/*-----------------Small PC media querys-------*/
+@media only screen and(max-width: 1000px){
+    .landing-page{
+        .one{
+            h1{
+                font-size: 3rem;
+            }
+            .landing-img{
+                background-image: url("img/small_pc/inicio.png");
+            }
+        }
+        .two{
+            .landing-img{
+                background-image: url("img/small_pc/nosotros.png")
+            }
+            .button{
+                margin-top: 1rem;
+            }
+        }
+        .three{
+            .landing-img{
+                background-image: url("img/small_pc/paquete_reunion.png");
+            }
+        }
+        .four{
+            .landing-img{
+                background-image: url("img/small_pc/paquete_basico.png");
+            }
+        }
+        .five{
+            .landing-img{
+                background-image: url("img/small_pc/paquete_inter.png");
+            }
+        }
+        .six{
+            .landing-img{
+                background-image: url("img/small_pc/paquete_avanzado.png");
+            }
+        }
+        .seven{
+            .landing-img{
+                background-image: url("img/small_pc/contactanos.png");
+            }
+        }
 
+    }
+}
+/*-----------------Tiny PC media querys-------*/
+@media only screen and(max-width: 850px){
+    .landing-page{
+        .one{
+            h1{
+                font-size: 2rem;
+            }
+            .landing-img{
+                background-image: url("img/tiny_pc/inicio.png");
+            }
+        }
+        .two{
+            .landing-img{
+                background-image: url("img/tiny_pc/nosotros.png")
+            }
+            .button{
+                margin-top: 1rem;
+            }
+        }
+        .three{
+            .landing-img{
+                background-image: url("img/tiny_pc/paquete_reunion.png");
+            }
+        }
+        .four{
+            .landing-img{
+                background-image: url("img/tiny_pc/paquete_basico.png");
+            }
+        }
+        .five{
+            .landing-img{
+                background-image: url("img/tiny_pc/paquete_inter.png");
+            }
+        }
+        .six{
+            .landing-img{
+                background-image: url("img/tiny_pc/paquete_avanzado.png");
+            }
+        }
+        .seven{
+            .landing-img{
+                background-image: url("img/tiny_pc/contactanos.png");
+            }
+        }
+
+    }
+}
 /*Tablet media querys */
-@media only screen and (min-width:500px) and (min-height:1000px ){
-    
+@media only screen and (min-width:500px)  and (min-height:900px){
     .landing-sections{
         grid-template-columns: 1fr 44.01vw;
     }
@@ -145,13 +232,25 @@
     }
   }
 }
-@media only screen and(max-width: 500px){
+@media only screen and(max-width: 700px){
  
     //$size:  59.0625vw;
 .landing-page{
     .one{
+        position: relative;
         .landing-img{
             background-image: url("img/cellphone/inicio.png");            
+        }
+        .button-container{
+            position: absolute;
+            bottom: 5%;
+        }
+        .landing__section-b{
+            padding: 50% 1.5rem 0 1.5rem;
+        }
+        sub{
+            width: 100%;
+            text-align: center;
         }
     }
     .two{
@@ -206,6 +305,7 @@
         grid-template-rows: min-content min-content;
         p{
             width: 100%;
+            padding: 0;
         }
         .landing__section-a{
             grid-column: 1/2;
