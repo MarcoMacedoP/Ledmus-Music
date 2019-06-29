@@ -1,6 +1,5 @@
 //$size:  59.0625vw;
 .landing-page{
-    
     .landing-sections{
         display: grid;
         width: 100%;
@@ -24,7 +23,6 @@
         p, sub{
             box-sizing: border-box;
             padding-right: .5rem;
-            width: 90%;
         }
         .landing-img{
             width: 100%;
@@ -50,6 +48,10 @@
         }
     }
     .one{
+        p{
+            width: 56vw;
+            border: solid 1px red;
+        }
         .landing__section-b{
             padding-top: 30%;
         }
@@ -97,6 +99,9 @@
         .one{
             h1{
                 font-size: 3rem;
+            }
+            p{
+                width: 100%;
             }
             .landing-img{
                 background-image: url("img/small_pc/inicio.png");
