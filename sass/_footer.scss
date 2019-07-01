@@ -11,6 +11,10 @@ footer{
         text-align: center;
     
     }
+    a{
+        color: $white_dark;
+        text-decoration-color: $white_dark;
+    }
     ul{
         display: flex;
         flex-direction: column;

@@ -1,0 +1,23 @@
+
+.contact-icons{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 3;
+    display: flex;
+    a{
+        --size:64px;
+        display: block;
+        width: var(--size);
+        height: var(--size);
+        margin: 0 0.5rem;
+        background-size: contain;
+    }
+    .contac-icons__whatsapp{
+        background-image: url(img/icons/whatsapp.svg);
+        
+    }
+    .contac-icons__facebook{
+        background-image: url(img/icons/messenger.svg);
+    }
+}

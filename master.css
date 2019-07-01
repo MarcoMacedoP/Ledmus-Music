@@ -242,6 +242,24 @@ sub {
     color: #95C0DC; }
   .header-logo .logo-container {
     width: 20.32vw; } }
+.contact-icons {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 3;
+  display: flex; }
+  .contact-icons a {
+    --size:64px;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    margin: 0 0.5rem;
+    background-size: contain; }
+  .contact-icons .contac-icons__whatsapp {
+    background-image: url(img/icons/whatsapp.svg); }
+  .contact-icons .contac-icons__facebook {
+    background-image: url(img/icons/messenger.svg); }
+
 .header {
   width: 100%;
   height: 7.5vh;
@@ -482,7 +500,7 @@ form {
     margin: 0.5rem 0; }
 
 ::placeholder {
-  color: #95C0DC;
+  color: inherit;
   font-family: "Open Sans", sans-serif; }
 
 footer {
@@ -496,6 +514,9 @@ footer {
   padding-bottom: 2rem; }
   footer p {
     text-align: center; }
+  footer a {
+    color: #C7C7C7;
+    text-decoration-color: #C7C7C7; }
   footer ul {
     display: flex;
     flex-direction: column;
