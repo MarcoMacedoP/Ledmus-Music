@@ -189,6 +189,7 @@ sub {
     grid-column: 2/-1;
     grid-row: 2/3; }
   .header-logo h2 {
+    padding-left: 0.25rem;
     margin: 0;
     grid-column: 2/-1;
     grid-row: 3/-1; }
